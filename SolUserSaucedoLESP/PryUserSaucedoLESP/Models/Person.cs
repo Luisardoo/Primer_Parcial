@@ -4,6 +4,7 @@
     public class Person
     {
         [Key]
+        [Required]
         public int id { get; set; }
         [StringLength(100, ErrorMessage = "Porfavor ingrese su nombre completo entre 5 o 100 caracteres", MinimumLength = 5)]
         [Required]
